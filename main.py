@@ -1,5 +1,5 @@
 def main():
-    print("Hello from django-rest-framework!")
+    print("Hello from django-rest-framework-template!")
 
 
 if __name__ == "__main__":

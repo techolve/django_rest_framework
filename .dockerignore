@@ -1,0 +1,8 @@
+# Django用のDockerコンテナ
+docker-compose.yml
+
+# PostgreSQLデータボリューム
+postgres_data/
+
+# ログファイル
+*.log
