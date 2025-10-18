@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Django REST Framework のブラウザAPIを利用可能にする
     path('api-auth/', include('rest_framework.urls'))
 ]
