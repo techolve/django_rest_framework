@@ -128,6 +128,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Django REST Framework settings
 REST_FRAMEWORK = {
+    # ページネーション設定 >>>
+    # https://www.django-rest-framework.org/api-guide/pagination/
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": env.int('PAGE_SIZE', default=10),
+    # <<< ページネーション設定
 }
