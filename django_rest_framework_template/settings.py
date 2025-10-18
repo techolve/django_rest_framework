@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'rest_framework',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,6 @@ REST_FRAMEWORK = {
     "PAGE_SIZE": env.int('PAGE_SIZE', default=10),
     # <<< ページネーション設定
 }
+
+# カスタムユーザーモデルの設定
+AUTH_USER_MODEL = 'user.User'
